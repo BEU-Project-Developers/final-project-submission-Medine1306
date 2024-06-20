@@ -7,7 +7,7 @@ using MovieStore.Repositories.Implementation;
 
 namespace MovieStore.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class GenreController : Controller
     {
         private readonly IGenreService _genreService;
