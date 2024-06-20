@@ -21,7 +21,7 @@ namespace MovieStore.Repositories.Implementation
                     Directory.CreateDirectory(path);
                 }
 
-                // Check the allowed extenstions
+                // Check the allowed extensions
                 var ext = Path.GetExtension(imageFile.FileName);
                 var allowedExtensions = new string[] { ".jpg", ".png", ".jpeg" };
                 if (!allowedExtensions.Contains(ext))

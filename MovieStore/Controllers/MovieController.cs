@@ -86,7 +86,7 @@ namespace MovieStore.Controllers
             var result = _movieService.Update(model);
             if (result)
             {
-                TempData["msg"] = "Added Successfully";
+                TempData["msg"] = "Updated Successfully";
                 return RedirectToAction(nameof(MovieList));
             }
             else
